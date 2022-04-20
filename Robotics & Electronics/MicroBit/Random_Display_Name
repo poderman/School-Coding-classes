@@ -1,1 +1,11 @@
 
+from microbit import *
+import random
+
+while True:
+
+    names = ["Mary", "Yolanda", "Damien", "Alia", "Kushal", "Mei Xiu", "Zoltan" ]
+
+    display.scroll(random.choice(names))
+
+    sleep(1000)
