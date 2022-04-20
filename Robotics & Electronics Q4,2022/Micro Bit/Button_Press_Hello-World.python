@@ -1,0 +1,15 @@
+from microbit import *
+import music
+
+while True:
+    if button_a.is_pressed():
+        print("Hello")
+        sleep(300)
+    elif button_b.is_pressed():
+        print("World")
+        sleep(300)
+    else:
+        display.show(Image.HAPPY)
+        
+
+display.clear()
