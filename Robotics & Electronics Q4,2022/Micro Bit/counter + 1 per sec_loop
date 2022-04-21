@@ -1,0 +1,11 @@
+from microbit import * 
+
+counter = 1 
+
+
+while True:
+    display.scroll(counter)
+    sleep(500)
+    if counter == 5:
+        counter = 0
+    counter = counter + 1
