@@ -1,0 +1,30 @@
+# Add your Python code here. E.g.
+from microbit import *
+
+
+Tick = Image("00000:"
+             "00009:"
+             "00090:"
+             "90900:"
+             "09000")
+
+X = Image("90009:"
+             "09090:"
+             "00900:"
+             "09090:"
+             "90009")
+
+while True:
+    
+     pin0.write_digital(1)
+     display.show(X)
+     if button_a.is_pressed():
+         pin0.write_digital(0)
+         pin1.write_digital(1)
+         sleep(2000)
+         pin1.write_digital(0)
+         pin2.write_digital(1)
+         display.show(Tick)
+         sleep(8000)
+         pin2.write_digital(0)
+         
