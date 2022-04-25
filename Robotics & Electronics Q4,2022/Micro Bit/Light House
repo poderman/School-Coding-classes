@@ -1,3 +1,4 @@
+#http://www.microbitlearning.com/code/python/microbit-ldr-example.php
 from microbit import *
 
 import music
