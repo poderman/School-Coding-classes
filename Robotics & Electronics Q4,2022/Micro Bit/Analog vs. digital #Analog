@@ -1,0 +1,12 @@
+# This is still a work in projress
+from microbit import *
+
+counter = 0
+
+while True:
+    pin2.write_analog(counter) 
+    counter = counter + 34.1
+    if counter <= 1023
+        counter = counter - 1023
+    sleep(1000)
+    
