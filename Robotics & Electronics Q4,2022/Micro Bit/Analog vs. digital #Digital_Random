@@ -40,6 +40,19 @@ while True:
     #pin2.write_digital(0)
         
     sleep(1000)
+    
+    
+    
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+from microbit import *
+import random
+
+
+while True:
+    answer = random.randrange(100) + random.random()
+    pin8.write_digital(answer))
 
 
     
