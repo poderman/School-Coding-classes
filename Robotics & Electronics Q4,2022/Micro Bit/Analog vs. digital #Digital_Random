@@ -23,7 +23,23 @@ while True:
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
+#This is still a work on progress
+from microbit import *
+import random
 
+names = [1, 0 ]
+
+while True:
+    if button_a.was_pressed():
+        pin8.write_digital(random.choice(names))
+        
+        #display.scroll(random.choice(names))
+        
+    #pin0.write_digital(0)
+    #pin1.write_digital(0)
+    #pin2.write_digital(0)
+        
+    sleep(1000)
 
 
     
