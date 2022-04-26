@@ -1,0 +1,23 @@
+# This is still a work in progress
+from microbit import *
+
+red = 0
+green = 341
+blue = 682
+
+while True:
+    pin8.write_analog(red)
+    pin12.write_analog(green)
+    pin16.write_analog(blue)
+    red = red + 34.1
+    green = green + 34.1
+    blue = blue + 34.1
+    if red <= 1023
+        red = 0
+    elif green <= 1023
+        green = 0
+    elif blue <= 1023
+        blue = 0
+    sleep(1000)
+    
+    
