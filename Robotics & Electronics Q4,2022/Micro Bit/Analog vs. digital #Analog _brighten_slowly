@@ -1,0 +1,11 @@
+
+from microbit import *
+
+counter = 0
+
+while True:
+    pin8.write_analog(counter) 
+    counter = counter + 34.1
+    sleep(1000)
+    
+    
