@@ -1,16 +1,29 @@
-# 
+# This is still a work in progress
 from microbit import *
 
 import random
 
-LED = [pin0.write_digital(1), pin1.write_digital(1), pin0.write_digital(1) ]
+#LED = [pin0.write_digital(1), pin0.write_digital(1), pin0.write_digital(1) ]
+
+#light = [pin8, pin12, pin16 ]
 
 sec = 1000
 
 while True:
-    (LED)
-    sleep(sec)
+    if (random.choice(light)) = pin 8
+        print("Hello")
+        
+    sleep(2000)
     pin0.write_digital(0)
     pin1.write_digital(0)
     pin2.write_digital(0)
+    
+    
+    
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
     
