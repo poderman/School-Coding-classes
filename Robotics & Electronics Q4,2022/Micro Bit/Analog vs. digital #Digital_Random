@@ -3,14 +3,11 @@ from microbit import *
 import random
 
 while True:
+    if button_a.is_pressed():
 
-    pin8.write_digital(random.randint(0, 1))
-    pin12.write_digital(random.randint(0, 1))
-    pin16.write_digital(random.randint(0, 1))
+        pin8.write_digital(random.randint(0, 1))
+        pin12.write_digital(random.randint(0, 1))
+        pin16.write_digital(random.randint(0, 1))
     
-    sleep(1000)
-    
-    pin8.write_digital(0)
-    pin12.write_digital(0)
-    pin16.write_digital(0)
+        sleep(500)
     
