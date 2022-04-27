@@ -52,22 +52,50 @@ while True:
 # Add your Python code here. E.g.
 from microbit import *
 
-counter1 = 1023
+counter1 = 0
 counter2 = 0
-counter3 = 0
+counter3 = 1023
 
-pin8.write_analog(counter1)
+
 
 while True:
-    if counter3 == 1023:
-        pin8.write_analog(counter1)
-    elif counter1 == 1023:
-        
-    elif counter2 == #:
     
     pin8.write_analog(counter1) 
-    counter = counter + 34.1
+    counter = counter + 102.3
+    
+    pin8.write_analog(counter1) 
+    counter = counter + 102.3
+    
+    pin8.write_analog(counter1) 
+    counter = counter + 102.3
+    
+    pin8.write_analog(counter1) 
+    counter = counter + 102.3
+    
+    pin8.write_analog(counter1) 
+    counter = counter + 102.3
+    
+    pin8.write_analog(counter1) 
+    counter = counter + 102.3
+    
+    pin8.write_analog(counter1) 
+    counter = counter + 102.3
+    
+    pin8.write_analog(counter1) 
+    counter = counter + 102.3
+    
+    pin8.write_analog(counter1) 
+    counter = counter + 102.3
+    
+    pin8.write_analog(counter1) 
+    counter = counter + 102.3
+    
     sleep(1000)
+    
+    
+    
+    
+    
     
     
     
