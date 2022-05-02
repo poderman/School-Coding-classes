@@ -1,52 +1,3 @@
-# This is still a work in progress
-from microbit import *
-
-red = 0
-green = 341
-blue = 682
-
-while True:
-    pin8.write_analog(red)
-    pin12.write_analog(green)
-    pin16.write_analog(blue)
-    red = red + 34.1
-    green = green + 34.1
-    blue = blue + 34.1
-    if red <= 1023
-        red = 0
-    elif green <= 1023
-        green = 0
-    elif blue <= 1023
-        blue = 0
-    sleep(1000)
-    
-    
-    
-    
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-# Add your Python code here. E.g.
-from microbit import *
-
-counter1 = 1023
-counter2 = 0
-counter3 = 0
-
-
-
-while True:
-    
-    pin8.write_analog(counter1) 
-    counter = counter - 102.3
-    sleep(1000)
-    
-    
-    
-    
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 
 
 # Add your Python code here. E.g.
@@ -61,41 +12,220 @@ counter3 = 1023
 while True:
     
     pin8.write_analog(counter1) 
-    counter = counter + 102.3
-    
-    pin8.write_analog(counter1) 
-    counter = counter + 102.3
-    
-    pin8.write_analog(counter1) 
-    counter = counter + 102.3
-    
-    pin8.write_analog(counter1) 
-    counter = counter + 102.3
-    
-    pin8.write_analog(counter1) 
-    counter = counter + 102.3
-    
-    pin8.write_analog(counter1) 
-    counter = counter + 102.3
-    
-    pin8.write_analog(counter1) 
-    counter = counter + 102.3
-    
-    pin8.write_analog(counter1) 
-    counter = counter + 102.3
-    
-    pin8.write_analog(counter1) 
-    counter = counter + 102.3
-    
-    pin8.write_analog(counter1) 
-    counter = counter + 102.3
+    counter1 = counter1 + 102.3
+    pin16.write_analog(counter3) 
+    counter3 = counter3 - 102.3
     
     sleep(1000)
     
+    pin8.write_analog(counter1) 
+    counter1 = counter1 + 102.3
+    pin16.write_analog(counter3) 
+    counter3 = counter3 - 102.3
     
+    sleep(1000)
     
+    pin8.write_analog(counter1) 
+    counter1 = counter1 + 102.3
+    pin16.write_analog(counter3) 
+    counter3 = counter3 - 102.3
     
+    sleep(1000)
     
+    pin8.write_analog(counter1) 
+    counter1 = counter1 + 102.3
+    pin16.write_analog(counter3) 
+    counter3 = counter3 - 102.3
+    
+    sleep(1000)
+    
+    pin8.write_analog(counter1) 
+    counter1 = counter1 + 102.3
+    pin16.write_analog(counter3) 
+    counter3 = counter3 - 102.3
+    
+    sleep(1000)
+    
+    pin8.write_analog(counter1) 
+    counter1 = counter1 + 102.3
+    pin16.write_analog(counter3) 
+    counter3 = counter3 - 102.3
+    
+    sleep(1000)
+    
+    pin8.write_analog(counter1) 
+    counter1 = counter1 + 102.3
+    pin16.write_analog(counter3) 
+    counter3 = counter3 - 102.3
+    
+    sleep(1000)
+    
+    pin8.write_analog(counter1) 
+    counter1 = counter1 + 102.3
+    pin16.write_analog(counter3) 
+    counter3 = counter3 - 102.3
+    
+    sleep(1000)
+    
+    pin8.write_analog(counter1) 
+    counter1 = counter1 + 102.3
+    pin16.write_analog(counter3) 
+    counter3 = counter3 - 102.3
+    
+    sleep(1000)
+    
+    pin8.write_analog(counter1) 
+    counter1 = counter1 + 102.3
+    pin16.write_analog(counter3) 
+    counter3 = counter3 - 102.3
+    
+    sleep(1000)
+    
+    #blue is off red is on // turn green on red off next
+    
+    pin12.write_analog(counter2) 
+    counter2 = counter2 + 102.3
+    pin8.write_analog(counter1) 
+    counter1 = counter1 - 102.3
+    
+    sleep(1000)
+    
+    pin12.write_analog(counter2) 
+    counter2 = counter2 + 102.3
+    pin8.write_analog(counter1) 
+    counter1 = counter1 - 102.3
+    
+    sleep(1000)
+    
+    pin12.write_analog(counter2) 
+    counter2 = counter2 + 102.3
+    pin8.write_analog(counter1) 
+    counter1 = counter1 - 102.3
+    
+    sleep(1000)
+    
+    pin12.write_analog(counter2) 
+    counter2 = counter2 + 102.3
+    pin8.write_analog(counter1) 
+    counter1 = counter1 - 102.3
+    
+    sleep(1000)
+    
+    pin12.write_analog(counter2) 
+    counter2 = counter2 + 102.3
+    pin8.write_analog(counter1) 
+    counter1 = counter1 - 102.3
+    
+    sleep(1000)
+    
+    pin12.write_analog(counter2) 
+    counter2 = counter2 + 102.3
+    pin8.write_analog(counter1) 
+    counter1 = counter1 - 102.3
+    
+    sleep(1000)
+    
+    pin12.write_analog(counter2) 
+    counter2 = counter2 + 102.3
+    pin8.write_analog(counter1) 
+    counter1 = counter1 - 102.3
+    
+    sleep(1000)
+    
+    pin12.write_analog(counter2) 
+    counter2 = counter2 + 102.3
+    pin8.write_analog(counter1) 
+    counter1 = counter1 - 102.3
+    
+    sleep(1000)
+    
+    pin12.write_analog(counter2) 
+    counter2 = counter2 + 102.3
+    pin8.write_analog(counter1) 
+    counter1 = counter1 - 102.3
+    
+    sleep(1000)
+    
+    pin12.write_analog(counter2) 
+    counter2 = counter2 + 102.3
+    pin8.write_analog(counter1) 
+    counter1 = counter1 - 102.3
+    
+    sleep(1000)
+    
+    # red is off green is on // blue is on green is off next
+    
+    pin12.write_analog(counter3) 
+    counter3 = counter3 + 102.3
+    pin8.write_analog(counter2) 
+    counter2 = counter2 - 102.3
+    
+    sleep(1000)
+    
+    pin12.write_analog(counter3) 
+    counter3 = counter3 + 102.3
+    pin8.write_analog(counter2) 
+    counter2 = counter2 - 102.3
+    
+    sleep(1000)
+    
+    pin12.write_analog(counter3) 
+    counter3 = counter3 + 102.3
+    pin8.write_analog(counter2) 
+    counter2 = counter2 - 102.3
+    
+    sleep(1000)
+    
+    pin12.write_analog(counter3) 
+    counter3 = counter3 + 102.3
+    pin8.write_analog(counter2) 
+    counter2 = counter2 - 102.3
+    
+    sleep(1000)
+    
+    pin12.write_analog(counter3) 
+    counter3 = counter3 + 102.3
+    pin8.write_analog(counter2) 
+    counter2 = counter2 - 102.3
+    
+    sleep(1000)
+    
+    pin12.write_analog(counter3) 
+    counter3 = counter3 + 102.3
+    pin8.write_analog(counter2) 
+    counter2 = counter2 - 102.3
+    
+    sleep(1000)
+    
+    pin12.write_analog(counter3) 
+    counter3 = counter3 + 102.3
+    pin8.write_analog(counter2) 
+    counter2 = counter2 - 102.3
+    
+    sleep(1000)
+    
+    pin12.write_analog(counter3) 
+    counter3 = counter3 + 102.3
+    pin8.write_analog(counter2) 
+    counter2 = counter2 - 102.3
+    
+    sleep(1000)
+    
+    pin12.write_analog(counter3) 
+    counter3 = counter3 + 102.3
+    pin8.write_analog(counter2) 
+    counter2 = counter2 - 102.3
+    
+    sleep(1000)
+    
+    pin12.write_analog(counter3) 
+    counter3 = counter3 + 102.3
+    pin8.write_analog(counter2) 
+    counter2 = counter2 - 102.3
+    
+    sleep(1000)
+    
+    #blue on green off // blue off red on next
     
     
     
