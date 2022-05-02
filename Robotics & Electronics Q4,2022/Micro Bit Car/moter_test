@@ -1,0 +1,15 @@
+
+# Add your Python code here. E.g.
+from microbit import *
+from motobit import MotoBit 
+
+moto = MotoBit() 
+moto.enable()
+
+while True:
+    
+    moto.drive(speed_left = 100, speed_right = 100) 
+
+ 
+ 
+ 
