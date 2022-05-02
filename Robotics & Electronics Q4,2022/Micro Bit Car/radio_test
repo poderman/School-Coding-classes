@@ -1,0 +1,22 @@
+# Add your Python code here. E.g.
+from microbit import *
+import radio
+
+radio.on()
+
+
+while True:
+    if button_a.was_pressed():
+        radio.send('flash')
+        print("flash")
+        
+    incoming = radio.receive()
+    if incoming == 'flash':
+    
+        print("Hi microBit")
+        display.scroll('Received')
+        display.show(Image.HEART)
+        sleep(2000)
+        display.show(Image.SNAKE)
+        
+        
