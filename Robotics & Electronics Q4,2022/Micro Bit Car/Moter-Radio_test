@@ -1,0 +1,50 @@
+# Add your Python code here. E.g.
+from microbit import *
+import radio
+
+radio.on()
+
+while True:
+    if button_a.was_pressed():
+        radio.send('Left')
+        
+    elif button_b.was_pressed():
+        radio.send('Right')
+        
+    
+        
+    else:
+        display.show(Image.NO)
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+# Add your Python code here. E.g.
+from microbit import *
+from motobit import MotoBit 
+import radio
+
+moto = MotoBit() 
+moto.enable()
+
+radio.on()
+
+on = 1000
+
+while True:
+    incoming = radio.receive()
+    if incoming == 'Both':
+        moto.drive(speed_left = 100, speed_right = 100)
+        sleep(on)
+    elif incoming == 'Left':
+        moto.drive(speed_left = 100, speed_right = 0) 
+        sleep(on)
+    elif incoming == 'Right':
+        moto.drive(speed_left = 0, speed_right = 100) 
+        sleep(on)
+    
+    else:
+        moto.drive(speed_left = 0, speed_right = 0)
+    
+
