@@ -1,3 +1,6 @@
+
+#https://support.microbit.org/support/solutions/articles/19000101864-using-a-servo-with-the-micro-bit#:~:text=The%20optimal%20method%20for%20connecting,other%20parts%20of%20the%20circuit).
+
 from microbit import * 
 # Servo control: 
 # 50 = ~1 millisecond pulse all right 
