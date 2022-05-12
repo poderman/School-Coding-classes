@@ -1,0 +1,216 @@
+//Link
+//https://www.arduino.cc/en/reference/else
+//https://github.com/hpssjellis/portenta-pro-community-solutions/blob/main/examples/dot2-portenta-h7-with-accessories/dot22-actuators/dot226-small-dual-dc-motor-driver/dot226-small-dual-dc-motor-driver.ino
+
+
+Still a work in projress
+//Arduino
+
+
+#include <Arduino.h> // Only needed by https://platformio.org/
+
+void setup() {
+  
+  pinMode(A6, INPUT);
+  pinMode(A7, INPUT);
+  Serial.begin(9600);
+
+  pinMode(D5, OUTPUT);   // PWM 0 to 256
+  pinMode(D4, OUTPUT);   // digital 0 to 1
+  pinMode(LEDB, OUTPUT);
+
+}
+
+void loop() {
+        
+    //if (analogRead(A6) <= 900)
+    //{
+    //digitalWrite(D4, 1);    // set one direction
+    //analogWrite(D5, 0);   // go medium
+    
+    //digitalWrite(LEDB, 1);    // LEDB off
+    //}    
+
+
+    if (analogRead(A7) <= 900)
+    {
+      
+    Serial.print("Right");
+    digitalWrite(LEDB, 0);    // LEDB on internal LED pulled LOW to go on
+    digitalWrite(D4, 0);    // set one direction
+    analogWrite(D5, 100);   // go medium
+    }
+
+    else if (analogRead(A6) <= 900)
+    {
+    Serial.print("Left");
+    digitalWrite(LEDB, 0);    // LEDB on internal LED pulled LOW to go on
+    digitalWrite(D4, 1);    // set one direction
+    analogWrite(D5, 250);   // go medium
+    }
+
+    //else
+    //{
+      
+    //Serial.print("Left");
+    //digitalWrite(LEDB, 1);    // LEDB on internal LED pulled LOW to go on
+    //digitalWrite(D4, 1);    // set one direction
+    //analogWrite(D5, 0);   // go medium
+    //}
+
+
+   if (analogRead(A6) >= 900)
+   {
+    Serial.print("Left");
+    digitalWrite(LEDB, 1);    // LEDB on internal LED pulled LOW to go on
+    digitalWrite(D4, 1);    // set one direction
+    analogWrite(D5, 0);   // go medium
+    }
+    
+}
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Arduino
+
+
+#include <Arduino.h> // Only needed by https://platformio.org/
+
+void setup() {
+  
+  pinMode(A6, INPUT);
+  pinMode(A7, INPUT);
+  Serial.begin(9600);
+
+  pinMode(D5, OUTPUT);   // PWM 0 to 256
+  pinMode(D4, OUTPUT);   // digital 0 to 1
+  pinMode(LEDB, OUTPUT);
+
+}
+
+void loop() {
+        
+    //if (analogRead(A6) <= 900)
+    //{
+    //digitalWrite(D4, 1);    // set one direction
+    //analogWrite(D5, 0);   // go medium
+    
+    //digitalWrite(LEDB, 1);    // LEDB off
+    //}
+    
+    if (analogRead(A7) <= 900)
+    {
+      
+    Serial.print("Right");
+    digitalWrite(LEDB, 0);    // LEDB on internal LED pulled LOW to go on
+    digitalWrite(D4, 0);    // set one direction
+    analogWrite(D5, 255);   // go medium
+    }
+
+    else 
+    {
+      
+    Serial.print("Left");
+    digitalWrite(LEDB, 0);    // LEDB on internal LED pulled LOW to go on
+    digitalWrite(D4, 1);    // set one direction
+    analogWrite(D5, 255);   // go medium
+    }
+    
+    //else
+    //{
+      
+    //Serial.print("Left");
+    //digitalWrite(LEDB, 1);    // LEDB on internal LED pulled LOW to go on
+    //digitalWrite(D4, 1);    // set one direction
+    //analogWrite(D5, 0);   // go medium
+    //}
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+void setup() {
+  
+  pinMode(6, INPUT);
+  Serial.begin(9600);
+
+}
+
+void loop() {
+        //digitalWrite(2, HIGH);
+        //delay(2000);
+        //digitalWrite(2, LOW);
+        //delay(2000);
+        
+    while(analogRead(6) <= 900);
+    {
+      Serial.print("Hello");
+      delay(500);
+    }
+    
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+#MicroBit
+
+# Add your Python code here. E.g.
+from microbit import *
+
+import radio
+
+radio.on()
+
+counter = 0
+
+while True:
+    #counter = 0
+    
+    incoming = radio.receive()
+    while incoming == 'left':
+        print("Left")
+        pin2.write_digital(1)
+        #counter = counter + 1
+        #sleep(1000)
+
+    while incoming == 'right':
+        print("Right")
+        pin1.write_digital(1)
+        
+    #if counter == 0:
+    pin2.write_digital(0)
+        
+        
+    pin1.write_digital(0)
+    
+        
+        
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+#MicroBit
+
+# Add your Python code here. E.g.
+from microbit import *
+
+import radio
+
+radio.on()
+
+while True:
+    display.show(Image.HEART)
+    if button_a.was_pressed():
+        radio.send('left')
+        print("left")
+    if button_b.was_pressed():
+        radio.send('right')
+        print("right")
+
+
+
+
+
+
