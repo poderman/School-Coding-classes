@@ -1,0 +1,69 @@
+# Still a work in progress
+# This is the car's code
+from microbit import *
+from motobit import MotoBit 
+import radio
+
+moto = MotoBit() 
+moto.enable()
+
+radio.on()
+
+while True:
+    incoming = radio.receive()
+    if incoming == 'super':
+        display.show("S")
+        moto.drive(speed_left = 100, speed_right = 100) 
+        
+    if incoming == 'left':
+        display.show("L")
+        moto.drive(speed_left = 20, speed_right = 40) 
+        
+    if incoming == 'right':
+        display.show("R")
+        moto.drive(speed_left = 40, speed_right = 20) 
+        
+    if incoming == 'up':
+        display.show("U")
+        moto.drive(speed_left = 500, speed_right = 50) 
+        
+    if incoming == 'down':
+        display.show("D")
+        moto.drive(speed_left = -30, speed_right = -30)
+    else
+        moto.drive(speed_left = 0, speed_right = 0) 
+        
+        
+ ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ 
+ 
+# This is the radio code
+from microbit import *
+import radio
+
+radio.on()
+
+while True:
+    gesture = accelerometer.current_gesture()
+    
+    if pin0.read_digital(1)
+        display.show("S")
+        radio.send('super')
+    
+    if button_a.was_pressed():
+        display.show("U")
+        radio.send('up')
+        
+    elif button_b.was_pressed():
+        display.show("D")
+        radio.send('down')
+        
+    if gesture == "face up":
+        display.show("L")
+        radio.send('left')
+        
+    elif gesture == "face up":
+        display.show("R")
+        radio.send('right')
+
+    
