@@ -1,0 +1,909 @@
+//This code is C++
+//C++
+
+//Version 1.0
+
+//This code is for the wheel of change project in did
+//in grade 9, 2022. it has 12 LED's in totel and uses a LCD display
+
+//In this code I fixed all the bugs but use a couple hundred more
+//lines of code then I wanted I might work on that in a later version.
+
+long randNumber;
+
+// include the library code:
+#include <LiquidCrystal.h>
+
+// initialize the library with the numbers of the interface pins
+LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
+
+void setup() {
+  Serial.begin(9600);
+  randomSeed(analogRead(0));
+  
+  //This is for the event LED's
+  pinMode(14, OUTPUT);
+  pinMode(15, OUTPUT);
+  pinMode(16, OUTPUT);
+  pinMode(17, OUTPUT);
+  pinMode(18, OUTPUT);
+  pinMode(19, OUTPUT);
+  pinMode(20, OUTPUT);
+  pinMode(21, OUTPUT);
+
+  //This is for the computer LED's
+  pinMode(7, OUTPUT);
+  pinMode(8, OUTPUT);
+  pinMode(9, OUTPUT);
+  pinMode(10, OUTPUT);
+  
+  
+  // set up the LCD's number of columns and rows:
+  lcd.begin(16, 2);
+  
+  lcd.print("Hello World!");
+  delay(2000);
+  lcd.clear();
+  delay(1000);
+
+
+  //int computer = (22, 26, 27, 28);
+}
+  //This is a random LED
+  //randNumber = random(6, 10);
+  //digitalWrite(randNumber, HIGH);
+  //randNumber = random(6, 10);
+  //digitalWrite(randNumber, HIGH);
+  //delay(500);
+  //digitalWrite(6, LOW);
+  //digitalWrite(7, LOW);
+  //digitalWrite(8, LOW);
+  //digitalWrite(9, LOW);
+  //delay(500);
+
+void loop() {
+  
+  //First fact
+  lcd.clear();
+  lcd.print("Did you know!");
+  lcd.setCursor(0, 1);
+  lcd.print("lo was the fist");
+  digitalWrite(21, LOW);
+  digitalWrite(14, HIGH);
+  //This is a random LED
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  delay(500);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  
+
+  //This is a random LED
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+
+  delay(500);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  
+  
+  digitalWrite(14, LOW);
+  digitalWrite(15, HIGH);
+  
+  //This is a random LED
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  
+  //This is a random LED
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  delay(500);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  
+  
+  digitalWrite(15, LOW);
+  digitalWrite(16, HIGH);
+
+  //This is a random LED
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  delay(500);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  
+  
+  //This is a random LED
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  delay(500);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  
+  
+  lcd.clear();
+  lcd.print("word sent over");
+  lcd.setCursor(0, 1);
+  lcd.print("the internet.");
+  digitalWrite(16, LOW);
+  digitalWrite(17, HIGH);
+
+  //This is a random LED
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  delay(500);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  
+  //This is a random LED
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  delay(500);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  
+  
+  digitalWrite(17, LOW);
+  digitalWrite(18, HIGH);
+
+  //This is a random LED
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  delay(500);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  
+  //This is a random LED
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  delay(500);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  
+  
+  digitalWrite(18, LOW);
+  digitalWrite(19, HIGH);
+
+  //This is a random LED
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  delay(500);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  
+  //This is a random LED
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  delay(500);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  
+  
+  
+  
+  //Next fact
+  lcd.clear();
+  lcd.print("Fun fact! 90% of");
+  lcd.setCursor(0, 1);
+  lcd.print("the worlds");
+  digitalWrite(19, LOW);
+  digitalWrite(20, HIGH);
+
+  //This is a random LED
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  delay(500);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  
+  //This is a random LED
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  delay(500);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  
+  
+  digitalWrite(20, LOW);
+  digitalWrite(21, HIGH);
+
+  //This is a random LED
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  delay(500);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  
+  //This is a random LED
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  delay(500);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  
+  
+  digitalWrite(21, LOW);
+  digitalWrite(14, HIGH);
+
+  //This is a random LED
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  delay(500);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  
+  //This is a random LED
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  delay(500);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  
+
+  
+  lcd.clear();
+  lcd.print("currency exists only");
+  lcd.setCursor(0, 1);
+  lcd.print("on computers.");
+  digitalWrite(14, LOW);
+  digitalWrite(15, HIGH);
+
+  //This is a random LED
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  delay(500);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  
+  //This is a random LED
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  delay(500);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  
+  
+  digitalWrite(15, LOW);
+  digitalWrite(16, HIGH);
+
+  //This is a random LED
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  delay(500);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  
+  //This is a random LED
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  delay(500);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  
+  
+  digitalWrite(16, LOW);
+  digitalWrite(17, HIGH);
+
+  //This is a random LED
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  delay(500);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  
+  //This is a random LED
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  delay(500);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  
+  
+  
+  //Next fact
+  lcd.clear();
+  lcd.print("Did you know!");
+  lcd.setCursor(0, 1);
+  lcd.print("The first");
+  digitalWrite(17, LOW);
+  digitalWrite(18, HIGH);
+
+  //This is a random LED
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  delay(500);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  
+  //This is a random LED
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  delay(500);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  
+  
+  digitalWrite(18, LOW);
+  digitalWrite(19, HIGH);
+
+  //This is a random LED
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  delay(500);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  
+  //This is a random LED
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  delay(500);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  
+  
+  digitalWrite(19, LOW);
+  digitalWrite(20, HIGH);
+  //This is a random LED
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  delay(500);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  
+  //This is a random LED
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  delay(500);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  
+  
+  
+  lcd.clear();
+  lcd.print("computer weighed");
+  lcd.setCursor(0, 1);
+  lcd.print("over 27 tons.");
+  digitalWrite(20, LOW);
+  digitalWrite(21, HIGH);
+
+  //This is a random LED
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  delay(500);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  
+  //This is a random LED
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  delay(500);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  
+  
+  digitalWrite(21, LOW);
+  digitalWrite(14, HIGH);
+
+  //This is a random LED
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  delay(500);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  
+  //This is a random LED
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  delay(500);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  
+  
+  digitalWrite(14, LOW);
+  digitalWrite(15, HIGH);
+
+  //This is a random LED
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  delay(500);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  
+  //This is a random LED
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  delay(500);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  
+  
+  
+  //Next fact
+  lcd.clear();
+  lcd.print("Fun fact!");
+  lcd.setCursor(0, 1);
+  lcd.print("The first");
+  digitalWrite(15, LOW);
+  digitalWrite(16, HIGH);
+
+  //This is a random LED
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  delay(500);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  
+  //This is a random LED
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  delay(500);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  
+  
+  digitalWrite(16, LOW);
+  digitalWrite(17, HIGH);
+  //This is a random LED
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  delay(500);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  
+  //This is a random LED
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  delay(500);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  
+  
+  digitalWrite(17, LOW);
+  digitalWrite(18, HIGH);
+
+  //This is a random LED
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  delay(500);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  
+  //This is a random LED
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  delay(500);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  
+
+  
+  
+  lcd.clear();
+  lcd.print("gigabyte drive");
+  lcd.setCursor(0, 1);
+  lcd.print("cost $40,000");
+  digitalWrite(18, LOW);
+  digitalWrite(19, HIGH);
+
+  //This is a random LED
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  delay(500);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  
+  //This is a random LED
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  delay(500);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  
+  
+  digitalWrite(19, LOW);
+  digitalWrite(20, HIGH);
+
+  //This is a random LED
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  delay(500);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  
+  //This is a random LED
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  delay(500);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  
+  
+  digitalWrite(20, LOW);
+  digitalWrite(21, HIGH);
+
+  //This is a random LED
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  delay(500);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  
+  //This is a random LED
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  randNumber = random(6, 10);
+  digitalWrite(randNumber, HIGH);
+  delay(500);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(9, LOW);
+  
+  
+}
