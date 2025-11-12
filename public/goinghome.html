@@ -75,6 +75,11 @@
       font-size: 0.9rem;
       opacity: 0.7;
     }
+    audio {
+      margin-top: 1rem;
+      width: 100%;
+      max-width: 300px;
+    }
 
     /* Media queries for optimization */
     @media (max-width: 600px) {
@@ -151,17 +156,17 @@
       Time to go home!
     </div>
 
+    <!-- Background Music with controls -->
+    <audio id="bg-music" controls autoplay loop>
+      <source src="https://www.free-stock-music.com/music/alex-productions/mp3/alex-productions-ambient-music-nature.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
     <footer>
       Timezone: Eastern Standard Time (EST)<br>
       Background Music: "Ambient Music | Nature" by Alex-Productions | <a href="https://onsound.eu/" style="color: #fff;">onsound.eu</a> (CC BY 3.0)
     </footer>
   </div>
-
-  <!-- Background Music -->
-  <audio autoplay loop>
-    <source src="https://www.free-stock-music.com/music/alex-productions/mp3/alex-productions-ambient-music-nature.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
 
   <script>
     // Set the target date: December 13, 2025 at 6:30 PM EST
@@ -198,6 +203,15 @@
     // Update immediately and then every second
     updateCountdown();
     setInterval(updateCountdown, 1000);
+
+    // Attempt to autoplay music, with fallback to user interaction
+    document.addEventListener('DOMContentLoaded', () => {
+      const audio = document.getElementById('bg-music');
+      audio.play().catch(error => {
+        console.log('Autoplay prevented:', error);
+        // Music will play when user interacts with the page
+      });
+    });
   </script>
 </body>
 </html>
