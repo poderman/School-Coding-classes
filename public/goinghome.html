@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Countdown to Dec 13, 6:30 PM EST</title>
+  <title>Countdown to Going Home</title>
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -12,7 +12,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      min-height: 100vh;
       margin: 0;
       text-align: center;
     }
@@ -22,15 +22,22 @@
       border-radius: 20px;
       box-shadow: 0 10px 30px rgba(0,0,0,0.3);
       backdrop-filter: blur(10px);
-      max-width: 500px;
+      max-width: 90%;
+      width: 500px;
     }
     h1 {
       margin: 0 0 1rem 0;
       font-size: 2rem;
     }
+    h2 {
+      margin: 0 0 1.5rem 0;
+      font-size: 1.2rem;
+      opacity: 0.8;
+    }
     .countdown {
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
       gap: 1rem;
       margin: 1.5rem 0;
       font-size: 1.2rem;
@@ -40,6 +47,7 @@
       padding: 1rem;
       border-radius: 12px;
       min-width: 80px;
+      flex: 1 1 80px;
     }
     .time-box span {
       display: block;
@@ -64,11 +72,57 @@
       font-size: 0.9rem;
       opacity: 0.7;
     }
+
+    /* Media queries for optimization */
+    @media (max-width: 600px) {
+      .container {
+        padding: 1.5rem;
+        max-width: 95%;
+      }
+      h1 {
+        font-size: 1.8rem;
+      }
+      h2 {
+        font-size: 1rem;
+      }
+      .time-box {
+        min-width: 70px;
+        padding: 0.8rem;
+      }
+      .time-box span {
+        font-size: 2rem;
+      }
+      .label {
+        font-size: 0.7rem;
+      }
+      footer {
+        font-size: 0.8rem;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      h1 {
+        font-size: 2.5rem;
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
+      .time-box {
+        min-width: 100px;
+        padding: 1.2rem;
+      }
+      .time-box span {
+        font-size: 3rem;
+      }
+      .label {
+        font-size: 1rem;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Countdown to</h1>
+    <h1>Countdown to Going Home</h1>
     <h2>December 13th, 6:30 PM EST</h2>
     
     <div class="countdown" id="countdown">
@@ -91,7 +145,7 @@
     </div>
 
     <div id="expired" class="expired" style="display: none;">
-      The event has started!
+      Time to go home!
     </div>
 
     <footer>
